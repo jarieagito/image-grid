@@ -16,20 +16,73 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.photo:nth-child(2) {
+  display: none;
+}
+
+.photo:nth-child(5) {
+  display: none;
+}
+
 @media only screen and (min-width: 25em) {
 
+  .photo {
+    width: 50%;
+  }
 
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo:first-child {
+    width: 100%;
+  }
+
+  .photo:nth-child(2) {
+    display: block;
+  }
+
+  .photo:nth-child(5) {
+    display: block;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  .photo {
+    width: 33.3333%;
+  }
 
+  .photo:nth-child(5) {
+    display: none;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  .photo:first-child {
+    width: 66.6666%;
+  }
 
+  .photo:nth-child(5) {
+    display: block;
+  }
 
 }
